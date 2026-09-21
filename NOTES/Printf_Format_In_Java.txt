@@ -1,0 +1,165 @@
+>> Print formated output in Java
+
+Java provides multiple ways to print formatted data using System.out.printf and String.format.
+
+Syntax:
+
+System.out.printf("format string", arguments);
+
+
+Common Format Specifiers
+Specifier	Meaning
+%d	Integer (decimal)
+%f	Floating-point number
+%s	String
+%c	Character
+%x	Integer (hexadecimal)
+%o	Integer (octal)
+%b	Boolean
+%n	Newline
+
+Example 1: Printing an Integer and String Formatted
+
+
+public class Main {
+    public static void main(String[] args) {
+        int num = 42;
+        String text = "Hello";
+
+        System.out.printf("Number: %d, Text: %s%n", num, text);
+    }
+}
+ o/p : Number: 42, Text: Hello
+
+
+Example 2: Formatting Width and Alignment
+
+
+Specifier	Meaning
+
+%5d	    Right-align integer in 5 spaces
+%-5d	Left-align integer in 5 spaces
+%10s	Right-align string in 10 spaces
+%-10s	Left-align string in 10 spaces
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.printf("%-10s %5d%n", "Java", 100);
+        System.out.printf("%-10s %5d%n", "C++", 7);
+    }
+}
+
+o/p :
+
+Java         100
+C++            7
+
+
+Example 3: Padding Numbers with Zeros
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.printf("Padded Number: %03d%n", 7);
+    }
+}
+
+o/p : Padded Number: 007
+
+Example 4: Formatting Floating-Point Numbers
+
+Specifier	Meaning
+%f	        Default floating-point format
+%.2f	    Floating-point with 2 decimal places
+
+%8.3f	    Floating-point with 3 decimal places, right-aligned in 8 spaces
+
+public class Main {
+    public static void main(String[] args) {
+        double pi = 3.14159;
+
+        System.out.printf("Default: %f%n", pi);
+        System.out.printf("Rounded to 2 decimals: %.2f%n", pi);
+        System.out.printf("Right-aligned (8 spaces, 3 decimals): %8.3f%n", pi);
+    }
+}
+
+
+o/p: 
+
+Default: 3.141590
+Rounded to 2 decimals: 3.14
+Right-aligned (8 spaces, 3 decimals):    3.142
+
+Example 5: Formatting Multiple Inputs
+
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("================================");
+        for (int i = 0; i < 3; i++) {
+            String s1 = sc.next();
+            int x = sc.nextInt();
+            System.out.printf("%-15s%03d%n", s1, x);
+        }
+        System.out.println("================================");
+        sc.close();
+    }
+}
+
+i/p : 
+java 100
+cpp 65
+python 50
+
+o/p :
+================================
+java           100
+cpp            065
+python         050
+================================
+
+
+ Example 6: Using String.format() Instead of printf
+
+If you want to store the formatted output in a variable, use String.format():
+
+public class Main {
+    public static void main(String[] args) {
+        int age = 25;
+        String name = "Alice";
+
+        String formattedString = String.format("Name: %s, Age: %d", name, age);
+        System.out.println(formattedString);
+    }
+}
+
+o/p:
+Name: Alice, Age: 25
+
+
+Example 7: Formatting Currency
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        double salary = 123456.789;
+        
+        NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.US);
+        System.out.println("Formatted Salary: " + formatter.format(salary));
+    }
+}
+o/p:
+
+Formatted Salary: $123,456.79
+
+Remark:
+
+printf is great for formatted output directly to the console.
+
+String.format is useful when you need to store the formatted output in a variable.
+
+NumberFormat is useful for currency formatting.

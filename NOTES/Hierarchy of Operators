@@ -1,0 +1,10 @@
+BODMAS : Brackets -> order -> Division -> Multiplication -> Addition -> Substraction44
+
+Priority ~ Brackets -> Order(power or something else) -> Div / Mul -> Add/Subs
+
+2 *3 /4 +7/4+8-2+5/8
+ 
+left to right computer moves 
+
+2*3/4
+ 
