@@ -1,0 +1,23 @@
+Mulktithreading in java 
+
+>> Concept of running mutliple threades simultaneously. thread is a lightweight unit
+of process that executes in Mulktithreading environment.
+
+Advantage >> 
+ Efficient CPU utilization : As more than one threads run independemtly, this allows the cpu to perform multiple tasks simultaneously.
+
+ Improved performance
+
+ Better Resource sharing : As discussed earlier, threads share common memory, this reduces.  
+
+
+
+Thread >>
+
+
+
+Life Cycle of thread>>
+
+
+
+

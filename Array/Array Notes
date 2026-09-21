@@ -1,0 +1,17 @@
+Array : Collection of premetive data type. And all data should be same in an array.
+
+Syntax : 
+
+data type [] array_name = new data_type[Size_of_array]
+
+array_name : this is the reference 
+
+new keyword use to create object in heap memory => Dynamic memory Allocation (Assigning the memory space during execution or run time.)
+
+In C or Cpp, Array contains contiguous memory, while in Java it totally depends on jvm that it will be contiguous or not. 
+Because, 
+> Array obj are stored in heap memory.
+> Heap objects are not continuous.
+> Dynamic memory Allocation
+> Hence, Array in java may not be contiguous, it depends on Jvm.
+
