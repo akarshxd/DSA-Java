@@ -1,0 +1,1 @@
+Bubble Sort and Insertion Sort are stable because if it contains repetitive elements then aftter sorting it stays in same order while in Selection Sort it may or may not contain repetitive element in their same order.
