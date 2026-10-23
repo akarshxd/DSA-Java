@@ -1,68 +1,69 @@
-//Brute Force Approach
 import java.util.*;
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
+// Brute Force Approach
+    public class UnionOfTwoArray{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-//         // Take 1St Array 
+        // Take 1St Array 
 
-//         System.out.print("Enter the length of first Array : ");
-//         int n = sc.nextInt();
+        System.out.print("Enter the length of first Array : ");
+        int n = sc.nextInt();
 
-//         System.out.println("");
+        System.out.println("");
 
-//         int [] arr1  = new int [n];
-//         System.out.print("1st Array : ");
-//         for(int i = 0; i<n ; i++){
-//             arr1[i] = sc.nextInt();
-//         }
+        int [] arr1  = new int [n];
+        System.out.print("1st Array : ");
+        for(int i = 0; i<n ; i++){
+            arr1[i] = sc.nextInt();
+        }
 
-//         System.out.print("1st Array : ");
-//         for(int i =0; i<n; i++){
-//             System.out.print(" "+arr1[i]);
-//         }
+        System.out.print("1st Array : ");
+        for(int i =0; i<n; i++){
+            System.out.print(" "+arr1[i]);
+        }
 
-//         System.out.println("");
+        System.out.println("");
 
-//         // Take 2nd Array 
+        // Take 2nd Array 
 
-//         System.out.print("Enter the length of Second Array : ");
-//         int m = sc.nextInt();
+        System.out.print("Enter the length of Second Array : ");
+        int m = sc.nextInt();
 
-//         System.out.println("");
+        System.out.println("");
 
-//         int [] arr2  = new int [m];
-//         System.out.print("2nd Array : ");
-//         for(int i = 0; i<m ; i++){
-//             arr2[i] = sc.nextInt();
-//         }
+        int [] arr2  = new int [m];
+        System.out.print("2nd Array : ");
+        for(int i = 0; i<m ; i++){
+            arr2[i] = sc.nextInt();
+        }
 
-//         System.out.print("2nd Array : ");
-//         for(int i =0; i<m; i++){
-//             System.out.print(" "+arr2[i]);
-//         }
+        System.out.print("2nd Array : ");
+        for(int i =0; i<m; i++){
+            System.out.print(" "+arr2[i]);
+        }
 
-//         System.out.println("");
+        System.out.println("");
 
-//         // Init the Tree Set
-//         //Adding element of first array in set1
-//         Set<Integer> set1 = new TreeSet<>();
-//         for(int i = 0; i<n; i++){
-//             set1.add(arr1[i]);
-//         }
-//         //Adding element of second array in set1
-//         Set<Integer> set2 = new TreeSet<>();
-//         for(int i = 0; i<m; i++){
-//             set2.add(arr2[i]);
-//         }
+        // Init the Tree Set
+        //Adding element of first array in set1
+        Set<Integer> set1 = new TreeSet<>();
+        for(int i = 0; i<n; i++){
+            set1.add(arr1[i]);
+        }
+        //Adding element of second array in set1
+        Set<Integer> set2 = new TreeSet<>();
+        for(int i = 0; i<m; i++){
+            set2.add(arr2[i]);
+        }
 
-//         //Taking Union 
-//         set1.addAll(set2);
-//         System.out.print("Union of both array: "+set1);
-//     }
-// }
+        //Taking Union 
+        set1.addAll(set2);
+        System.out.print("Union of both array: "+set1);
+    }
+}
 
 //Optimal Approach
-
+/*
 public class UnionOfTwoArray{
     public static void Union(int[] a, int[]b){
         int n1 = a.length;
@@ -171,3 +172,5 @@ public class UnionOfTwoArray{
 
     }
 }
+
+*/
